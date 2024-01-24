@@ -3,6 +3,8 @@ import { createContext, useState, useContext } from "react";
 const DetailsContext = createContext();
 
 export const DetailsProvider = ({ children }) => {
+  const [templateId, setTemplateId] = useState("");
+
   const [personalDetails, setPersonalDetails] = useState({
     firstname: "",
     surname: "",
@@ -51,6 +53,10 @@ export const DetailsProvider = ({ children }) => {
     setImage(newImage);
   };
 
+  const updateTemplateId = (newId) => {
+    setTemplateId(newId);
+  };
+
   return (
     <DetailsContext.Provider
       value={{
@@ -64,6 +70,8 @@ export const DetailsProvider = ({ children }) => {
         updateEducationDetails,
         skills,
         updateSkills,
+        templateId,
+        updateTemplateId,
       }}
     >
       {children}

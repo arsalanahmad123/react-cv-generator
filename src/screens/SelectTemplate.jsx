@@ -1,7 +1,10 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
+import { useDetails } from "../context/DetailsContext";
 function SelectTemplate() {
+  const navigate = useNavigate();
+  const { updateTemplateId } = useDetails();
+
   const [active, setActive] = useState({
     id: "",
     status: false,
@@ -18,6 +21,10 @@ function SelectTemplate() {
         id,
         status: true,
       });
+      updateTemplateId(id);
+      setTimeout(() => {
+        navigate(`/cv-generating`);
+      }, 1000);
     }
   };
 
@@ -28,7 +35,7 @@ function SelectTemplate() {
           Select Template
         </h1>
         <div className="flex justify-center items-center gap-5">
-          <NavLink
+          <div
             className={`mt-10 flex justify-center items-center  p-10 hover:shadow-xl transition-all duration-300 group cursor-pointer ${
               active.status &&
               active.id === "template-1" &&
@@ -36,15 +43,14 @@ function SelectTemplate() {
             }`}
             id="template-1"
             onClick={() => handleActive("template-1")}
-            to={`/${active.id}/cv-generating`}
           >
             <img
               src="/src/assets/template-1.jpeg"
               alt=""
               className="bg-contain group-hover:scale-105 transition-all duration-300"
             />
-          </NavLink>
-          <NavLink
+          </div>
+          <div
             className={`mt-10 flex justify-center items-center p-10 hover:shadow-xl transition-all duration-300 group cursor-pointer ${
               active.status &&
               active.id === "template-2" &&
@@ -52,14 +58,13 @@ function SelectTemplate() {
             }`}
             id="template-2"
             onClick={() => handleActive("template-2")}
-            to={`/${active.id}/cv-generating`}
           >
             <img
               src="/src/assets/template-1.jpeg"
               alt=""
               className="bg-contain group-hover:scale-105 transition-all duration-300"
             />
-          </NavLink>
+          </div>
         </div>
       </div>
     </>

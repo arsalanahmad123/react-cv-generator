@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <DetailsProvider>
         <Routes>
           <Route element={<App />} path="/" />
-          <Route element={<Wrapper />} path="/:id/cv-generating/*" />
+          <Route element={<Wrapper />} path="/cv-generating/*" />
           <Route element={<FinalPage />} path="/summary" />
           <Route element={<SelectTemplate />} path="/select-template" />
         </Routes>
