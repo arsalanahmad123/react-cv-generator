@@ -55,6 +55,9 @@ export const DetailsProvider = ({ children }) => {
 
   const updateTemplateId = (newId) => {
     setTemplateId(newId);
+    if (newId) {
+      localStorage.setItem("selectedTemplate", newId);
+    }
   };
 
   return (

@@ -3,7 +3,7 @@ import React from "react";
 function template({ personalDetails }) {
   return (
     <>
-      <section className="p-10 flex flex-col ">
+      <section className="p-10 flex flex-col overflow-y-auto lg:w-[calc(100%-600px)]">
         <div className="flex flex-col ">
           <span className="uppercase text-3xl font-bold">
             FirstName {"  "}

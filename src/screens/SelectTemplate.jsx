@@ -23,7 +23,7 @@ function SelectTemplate() {
       });
       updateTemplateId(id);
       setTimeout(() => {
-        navigate(`/cv-generating`);
+        navigate(`/cv-generating/`);
       }, 1000);
     }
   };

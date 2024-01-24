@@ -208,7 +208,7 @@ const FinalPage = () => {
         </section>
       </section>
       <NavLink
-        to={"/cv-generating/personal-details"}
+        to={"/cv-generating"}
         className="text-lg font-semibold text-center text-white bg-indigo-600 px-3 py-1 rounded-lg hover:bg-indigo-700 transition-all duration-200 fixed top-5 right-5"
       >
         Edit Summary

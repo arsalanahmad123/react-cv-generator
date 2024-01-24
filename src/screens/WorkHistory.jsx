@@ -158,7 +158,7 @@ function WorkHistory() {
 
           <div className="flex justify-between items-center mt-4">
             <NavLink
-              to="/cv-generating/personal-details"
+              to="/cv-generating"
               className="text-xl font-bold text-center text-white bg-slate-500 px-4 py-2 rounded-lg hover:bg-slate-600 transition-all duration-200 mt-5"
             >
               Previous

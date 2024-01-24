@@ -6,7 +6,7 @@ function Summary() {
     <>
       <NavLink
         className="text-lg font-semibold text-center text-white bg-indigo-600 px-3 py-1 rounded-lg hover:bg-indigo-700 transition-all duration-200 fixed top-3 left-3"
-        to="/cv-generating/personal-details"
+        to="/cv-generating/"
       >
         Edit{" "}
       </NavLink>
