@@ -8,7 +8,7 @@ function App() {
         <h1 className="text-7xl font-bold text-center text-indigo-600 uppercase">
           React CV Generator
         </h1>
-        <Link to="/cv-generating/personal-details" className="mt-10">
+        <Link to="/select-template" className="mt-10">
           <button className="text-3xl font-bold text-center text-white bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700 transition-all duration-200">
             Generate
           </button>

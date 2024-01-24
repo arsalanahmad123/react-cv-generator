@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         'sans': ['Poppins', 'sans-serif'],
       },
+      boxShadow: {
+        '3xl': '0 10px 20px -15px rgb(79,70,229)',
+      }
     },
   },
   plugins: [],
