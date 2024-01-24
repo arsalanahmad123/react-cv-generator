@@ -1,6 +1,6 @@
 import React from "react";
 
-function template() {
+function template({ personalDetails }) {
   return (
     <>
       <section className="p-10 flex flex-col ">

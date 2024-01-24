@@ -1,9 +1,11 @@
 import React from "react";
 
-function template() {
+function template({ personalDetails, image, workDetails, educationDetails }) {
+  console.log(personalDetails);
+
   return (
     <>
-      <section className="p-10 flex flex-col ">
+      <section className="p-10 flex flex-col overflow-y-auto w-[600px]">
         <div className="flex flex-col ">
           <span className="uppercase text-3xl font-bold">
             FirstName {"  "}

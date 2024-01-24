@@ -5,11 +5,17 @@ const GeneratePDF = ({ Template }) => {
     useDetails();
 
   return (
-    <section className="flex flex-col mt-5 w-full">
-      <Suspense fallback={<div>Loading...</div>}>
-        {Template && <Template />}
-      </Suspense>
-    </section>
+    <Suspense fallback={<div>Loading...</div>}>
+      {Template && (
+        <Template
+          personalDetails={personalDetails}
+          image={image}
+          workDetails={workDetails}
+          educationDetails={educationDetails}
+          skills={skills}
+        />
+      )}
+    </Suspense>
   );
 };
 
