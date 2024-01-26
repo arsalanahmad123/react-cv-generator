@@ -36,7 +36,7 @@ function SelectTemplate() {
         </h1>
         <div className="flex justify-center items-center gap-5">
           <div
-            className={`mt-10 flex justify-center items-center  p-10 hover:shadow-xl transition-all duration-300 group cursor-pointer ${
+            className={`mt-10 flex justify-center items-center  p-10 hover:shadow-xl transition-all duration-300 group cursor-pointer  ${
               active.status &&
               active.id === "template-1" &&
               "border border-indigo-600 shadow-3xl"

@@ -35,7 +35,7 @@ const SkillsPage = () => {
 
   return (
     <>
-      <div className="p-5 bg-slate-200 rounded-md min-h-screen w-[600px]">
+      <div className="p-5 bg-slate-200 rounded-md min-h-[120vh] w-full lg:w-[600px]">
         <h1 className="text-4xl font-bold text-center text-indigo-600 uppercase">
           Choose your skills
         </h1>

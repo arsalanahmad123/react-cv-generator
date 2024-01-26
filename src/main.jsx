@@ -7,6 +7,7 @@ import Wrapper from "./screens/Wrapper.jsx";
 import FinalPage from "./screens/FinalPage.jsx";
 import SelectTemplate from "./screens/SelectTemplate.jsx";
 import { DetailsProvider } from "./context/DetailsContext.jsx";
+import Template from "./templates/Template.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route element={<Wrapper />} path="/cv-generating/*" />
           <Route element={<FinalPage />} path="/summary" />
           <Route element={<SelectTemplate />} path="/select-template" />
+          <Route element={<Template />} path="/template" />
         </Routes>
       </DetailsProvider>
     </BrowserRouter>
